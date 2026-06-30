@@ -223,9 +223,9 @@ int main(int argc, char *argv[]) {
     
     // -- Blur Kernel (averages out the pixels) --
     float blur_kernel[3][3] = { 
-        {1.0/16.0, 1.0/16.0, 1.0/16.0}, 
-        {1.0/16.0, 1.0/16.0, 1.0/16.0}, 
-        {1.0/16.0, 1.0/16.0, 1.0/16.0} 
+        {1.0/9.0, 1.0/9.0, 1.0/9.0}, 
+        {1.0/9.0, 1.0/9.0, 1.0/9.0}, 
+        {1.0/9.0, 1.0/9.0, 1.0/9.0} 
     };
 
     // -- Sharpen Kernel --
@@ -243,7 +243,9 @@ int main(int argc, char *argv[]) {
     };
 
     if (strcmp(argv[3], "blur") == 0) {
+        for (int i = 0; i < 15; i++) {
         apply_kernel(infoHeader.width, rows, stride, bytesPerPixel, pixels, blur_kernel);
+        }
     }
     
     if (strcmp(argv[3], "grayscale") == 0){
