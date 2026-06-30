@@ -17,6 +17,6 @@ This program parses BMP headers and modifies the pixel array to apply the follow
 
 ## Visual Examples
 
-| Original | Edge Detection | Reflect |
+| Original | Blur | Grayscale |
 | :---: | :---: | :---: |
 | <img src="butterfly.bmp" width="250"/> | <img src="butterflyblur.bmp" width="250"/> | <img src="butterflygrayscale.bmp" width="250"/> |
