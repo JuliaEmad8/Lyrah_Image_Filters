@@ -1,4 +1,4 @@
-# Lyrah_Image_Filters
+# Lyrah
 # C BMP Image Filter 🎨
 
 A command-line image processing tool written in C that applies various visual filters to 24-bit uncompressed BMP images. 
